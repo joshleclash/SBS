@@ -57,7 +57,7 @@ public class WebHookController {
         Map<String, Object> response = new HashMap<>();
         response.put("success", true);
         response.put("data", repository.findAll());
-        response.put("message", "informacion almacenada correctamente");
+        response.put("message", "informacion obtenida correctamente");
         return ResponseEntity.status(HttpStatus.OK).body(response);
 
     }

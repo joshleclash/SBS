@@ -1,29 +1,32 @@
-:spring_version: current
-:toc:
-:project_id: gs-rest-service
-:icons: font
-:source-highlighter: prettify
-
-This guide walks you through the process of creating a "`Hello, World`" RESTful web
-service with Spring.
+Servicio de prueba de Juan Verano
 
 == What You Will Build
 
-You will build a service that will accept HTTP GET requests at
-`http://localhost:8080/greeting`.
+Url de pruebas
+`http://localhost:8080/webhook/mail/save`.
 
-It will respond with a JSON representation of a greeting, as the following listing shows:
+la peticion debe tener la siguiente estructura
 
 ====
 [source,json]
 ----
-{"id":1,"content":"Hello, World!"}
+[{
+    "sg_message_id": "15536250111702803",
+    "response": "smtp;250 2.0.0 _SMR_secure92nd.exacttouch.com Ok: queued as D43F43005C2",
+    "email": "test@gmail.com",
+    "timestamp": 1553681625,
+    "fromaddress": "info@mydomain.com",
+    "event": "delivered",
+    "msize": 2155,
+    "customargs1": "value1",
+    "customargs2": "value2",
+    "tags": "mytag1"
+}]
 ----
 ====
+La informacion se puede consultar desde  `http://localhost:8080/webhook/mail/save`.
 
-You can customize the greeting with an optional `name` parameter in the query string, as
-the following listing shows:
-
+Y la url de 
 ====
 [source,text]
 ----
