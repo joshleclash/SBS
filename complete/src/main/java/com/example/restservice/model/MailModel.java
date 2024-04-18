@@ -25,6 +25,7 @@ public class MailModel {
   private String customargs1;
   private String customargs2;
   private String tags;
+
   
   public Long getId() {
     return id;
