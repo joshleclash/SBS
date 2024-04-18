@@ -1,0 +1,16 @@
+server:
+  port: ${PORT:8080} # Usando una variable de entorno con un valor predeterminado
+
+spring:
+  datasource:
+    url: jdbc:mariadb://localhost:3306/Webhook # URL de conexión a la base de datos
+    username: root # Usuario de la base de datos
+    password: 1019002704 # Contraseña de la base de datos
+    driver-class-name: org.mariadb.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: none
+    show-sql: true
+springdoc:
+  swagger-ui:
+    path: /docs/
