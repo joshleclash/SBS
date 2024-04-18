@@ -28,3 +28,5 @@ La informacion se puede almacenar desde  `http://localhost:8080/webhook/mail/sav
 
 La informacion se puede consultar desde `http://localhost:8080/webhook/mail/get`
 
+Documentacion de Swagger desde `http://localhost:8080/docs/swagger-ui/index.html`
+
